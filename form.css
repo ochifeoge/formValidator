@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #10102c;
+    
+}
+form {
+    background-color: #fff;
+    padding: 5% 2%;
+    position: relative;
+    width: 40%;
+}
+form i{
+    font-size: 46px;
+    color: #a39d9d;
+    position: absolute;
+    top: -4%;
+    right: 50%;
+    z-index: 2;
+}
+form input, form textarea{
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 3% 0 3% 0;
+    display: flex;
+    outline: none;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -5px -5px -5px rgba(0,0,0,0.5);
+    color: #fff;
+}
+form label{
+    width: 26%;
+    display: inline-block;
+    
+}
+.input-group{
+    display: flex;
+    align-items: center;
+   
+    gap: 10px;
+    position: relative;
+}
+button{
+    display: block;
+    margin: 2% auto;
+    padding: 2% 8%;
+    background: #000;
+    color: #fff;
+}
+.input-group span{
+    color: #8f0b0b;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 13px;
+}
+form span{
+    color: #8f0b0b;
+    position: absolute;
+    font-size: 14px;
+}
+.input-group span i{
+    color: seagreen;
+    font-size: 16px;
+    position: absolute;
+    top: -15px;
+}
+
+@media (max-width:799px){
+    .container{
+        background-image: url(tlexa.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    form{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(0,0,0,0.5);
+    padding: 8% 2% 2% 2%;
+    width: 95%;
+    height: 40vh;
+    border-radius: 25px;
+    }
+    form i{
+        top: -4%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    form label{
+        width: 25%;
+        color: #fff;
+    }
+}
